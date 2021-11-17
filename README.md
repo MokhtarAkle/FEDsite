@@ -38,12 +38,10 @@ All responsive
 ### Je opdracht:
 https://store.steampowered.com/
 
-#### Screenshot(s) van de eerste pagina (small screen): 
-Home pagina  
+#### Screenshot(s) van de eerste pagina (small screen):  
 <img src="images/sc1.png" width="375px" alt="Deel van de eerste pagina">
 
-#### Screenshot(s) van de tweede pagina (small screen):
-Game pagina 
+#### Screenshot(s) van de tweede pagina (small screen): 
 <img src="images/sc2.png" width="375px" alt="Deel van de 2e pagina">
  
 </details>
