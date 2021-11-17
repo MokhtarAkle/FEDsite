@@ -36,15 +36,15 @@ All responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://store.steampowered.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Home pagina  
+<img src="images/sc1.png" width="375px" alt="Deel van de eerste pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Game pagina 
+<img src="images/sc2.png" width="375px" alt="Deel van de 2e pagina">
  
 </details>
 
