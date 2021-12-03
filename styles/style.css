@@ -1,5 +1,191 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  list-style-type: none;
+  font-family: Suisse Intl;
 }
+
+@import url(//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=Suisse+Intl);
+@font-face {font-family: "Suisse Intl"; src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot"); src: url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.woff") format("woff"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/88f10bf18a36407ef36bf30bc25a3618.svg#Suisse Intl") format("svg"); }
+
+:root {
+  --main-steam-color: rgb(23,26,33);
+  --main-bg-color: #1B2838;
+  --steam-white: rgb(217,217,217);
+  --main-left-margin: 1vh;
+  --steam-blue: #acdbf5;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  background-color: var(--main-bg-color);
+
+}
+
+
+
+header img:first-of-type {
+  width: 5%;
+  max-width: 100%;
+  padding: 1em;
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  border-style: solid;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  color: var(--main-steam-color);
+  background-color: var(--main-steam-color);
+  
+}
+
+.hamMenu{
+  display: none;
+}
+
+.hamMenu1{
+  display: flex;
+  flex-flow: column;
+  background-color: red;
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  
+}
+
+.menuImage {
+  background-image: url(../images/tempham.png); 
+  background-size: cover;
+  width: 50px;
+}
+
+header > section {
+  background: linear-gradient(90deg, rgba(47,114,167,1) 27%, rgba(39,39,106,1) 67%, rgba(13,9,89,1) 100%); /*Source: https://cssgradient.io/*/
+  display: flex;
+  flex-flow: column wrap;
+  color: var(--steam-white);
+  font-size: 13px;
+  line-height: 34px;
+  text-shadow: 0px 2px 3px rgb(0 0 0 / 30%);
+}
+
+header section ul{
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: -0.9vh;
+  margin-bottom: 1vh;
+  margin-left: 1.5vh;
+  padding-inline-start: 0;
+}
+
+header section li:first-of-type{
+  margin-top: 1vh;
+  
+}
+
+::placeholder{
+  color: black;
+  font-style:italic;
+  font-size: 16px; /* change font*/
+  
+}
+header form{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 0.2vh;
+  position: relative;
+  margin-right: 8px;
+}
+header input{
+  background-color: rgb(95,131,155);
+  margin-left: var(--main-left-margin);
+  border: 1px solid rgba( 0, 0, 0, 0.3);
+  box-shadow: inset 1px 1px 2px rgb(0 0 0 / 40%);
+  border-radius: 3px;
+  display: flex;
+  flex-grow: 1;
+  height: 27px;
+  
+}
+
+header button{
+  background-image: url(..//images/search_icon_btn.png);
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 1px;
+}
+
+
+main section:first-of-type {
+
+
+  overflow: auto;
+}
+
+h1{
+  font-size: 2vh;
+  color: var(--steam-white);
+  margin-top: 4vh;
+  margin-left: var(--main-left-margin);
+}
+
+
+
+main article:first-of-type{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 616px;
+  height: 353px;
+
+}
+
+main article:first-of-type img{
+  width:  100vw;
+  height: 85%;
+  padding: 1vh;
+}
+
+main article:first-of-type figcaption {
+  color: var(--steam-white);
+  margin-left: var(--main-left-margin);
+  margin-top: -1vh;
+  font-size: 24px;
+
+}
+
+#background{
+  background: linear-gradient(180deg, #0A141D 0%, rgba(10, 20, 29, 0.2) 100%);
+  
+}
+#price{
+  font-size: 14px;
+  margin-top: 1vh;
+  color: var(--steam-blue);
+}
+
+@media screen and (max-width: 1050px)
+{
+  header img:first-of-type{
+    width: 30%;
+  }
+  .hamMenu1{
+    width: 60%;
+  }
+    
+}
+
 
