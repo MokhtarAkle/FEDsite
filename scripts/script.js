@@ -34,10 +34,9 @@ function displayHam() {
         
 }
 
-
 hamClick.addEventListener("click", function clickAway(){
     displayHam();
-    setTimeout(hideSide, 500);
+    setTimeout(hideSide, 100);
 });
 
 function removeside (event){
@@ -45,6 +44,7 @@ function removeside (event){
         menuDisplay.classList.remove("hamMenu1");
         menuDisplay.classList.add("hamMenu");
         console.log(menuDisplay.classList);
+        removeEvent();
     }
 }
 
@@ -55,10 +55,8 @@ function removeEvent(){
 function hideSide(){
     if (menuDisplay.classList == "hamMenu1"){
         document.addEventListener("click", removeside);
-        
-        setTimeout(removeEvent, 1000);
-        
     }
+    
 }
 
 classwitch.addEventListener("click", function(){
